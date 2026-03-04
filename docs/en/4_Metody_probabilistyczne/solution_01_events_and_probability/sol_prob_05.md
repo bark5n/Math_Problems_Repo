@@ -1,60 +1,56 @@
-### Task 5 Answer
+# Task 5 – Probability of Water Volume Intervals
 
 **Problem:**
 
-We consider the volume of water (in \(dm^3\)) that a concrete culvert can conduct per second.  
+Let:
 
-Given:  
-\[
-P(A) = 0.6, \quad P(B) = 0.7, \quad P(A \cup B) = 0.8
-\]
+A = {water volume ∈ ⟨125, 250⟩}  
+B = {water volume ∈ (200, 300⟩}
 
-Where:  
+Given:
 
-- \(A =\) volume in \([125, 250]\)  
-- \(B =\) volume in \((200, 300]\)
+P(A) = 0.6  
+P(B) = 0.7  
+P(A ∪ B) = 0.8  
 
-Find:
+Calculate:
 
-1. \(P(A')\) (complement of \(A\))  
-2. \(P(A \cap B)\) (intersection of the intervals)  
-3. \(P(A' \cap B')\) (volume not in either interval)  
-
----
-
-**Solution:**
-
-1. **Complement of \(A\):**  
-\[
-P(A') = 1 - P(A) = 1 - 0.6 = 0.4
-\]
-
-2. **Intersection of \(A\) and \(B\):**  
-
-Use the formula:  
-\[
-P(A \cup B) = P(A) + P(B) - P(A \cap B)
-\]  
-
-Solve for \(P(A \cap B)\):  
-\[
-P(A \cap B) = P(A) + P(B) - P(A \cup B) = 0.6 + 0.7 - 0.8 = 0.5
-\]
-
-3. **Intersection of complements (\(A' \cap B'\))**  
-
-Complement rule:  
-\[
-A' \cap B' = (A \cup B)'
-\]  
-\[
-P(A' \cap B') = 1 - P(A \cup B) = 1 - 0.8 = 0.2
-\]
+1) P(A′)  
+2) P(A ∩ B)  
+3) P(A′ ∩ B′)  
 
 ---
 
-**Answer:**
+## Solution
 
-- \(P(A') = 0.4\)  
-- \(P(A \cap B) = 0.5\)  
-- \(P(A' \cap B') = 0.2\)
+### 1) Complement of A
+
+P(A′) = 1 − P(A)
+
+P(A′) = 1 − 0.6  
+P(A′) = **0.4**
+
+---
+
+### 2) Intersection of A and B
+
+Using the formula:
+
+P(A ∩ B) = P(A) + P(B) − P(A ∪ B)
+
+P(A ∩ B) = 0.6 + 0.7 − 0.8  
+P(A ∩ B) = 1.3 − 0.8  
+P(A ∩ B) = **0.5**
+
+---
+
+### 3) Probability that volume falls into neither interval
+
+A′ ∩ B′ = (A ∪ B)′
+
+Using complement rule:
+
+P(A′ ∩ B′) = 1 − P(A ∪ B)
+
+P(A′ ∩ B′) = 1 − 0.8  
+P(A′ ∩ B′) = **0.2**
