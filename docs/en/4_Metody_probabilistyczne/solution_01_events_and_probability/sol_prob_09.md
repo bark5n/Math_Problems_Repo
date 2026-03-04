@@ -14,34 +14,19 @@ Find the probability that a randomly selected item (one from each plant) is of f
 
 ## Solution
 
-Let \(P(A_1), P(A_2), P(A_3)\) be the probabilities of a first-quality item from plants 1, 2, and 3 respectively:
+Let P(A1), P(A2), P(A3) be the probabilities of a first-quality item from plants 1, 2, and 3 respectively:
 
-\[
-P(A_1) = 0.97, \quad P(A_2) = 0.90, \quad P(A_3) = 0.86
-\]
+P(A1) = 0.97,  P(A2) = 0.90,  P(A3) = 0.86
 
 Since the item is randomly chosen from one of the three plants (equal probability from each plant):
 
-\[
-P(\text{first-quality}) = \frac{1}{3} P(A_1) + \frac{1}{3} P(A_2) + \frac{1}{3} P(A_3)
-\]
-
-\[
-P(\text{first-quality}) = \frac{1}{3} (0.97 + 0.90 + 0.86)
-\]
-
-\[
-P(\text{first-quality}) = \frac{1}{3} (2.73)
-\]
-
-\[
-P(\text{first-quality}) = 0.91
-\]
+P(first-quality) = (1/3)*P(A1) + (1/3)*P(A2) + (1/3)*P(A3)  
+P(first-quality) = (1/3) * (0.97 + 0.90 + 0.86)  
+P(first-quality) = (1/3) * 2.73  
+P(first-quality) = 0.91
 
 ---
 
 **Answer:**  
 
-\[
-\boxed{0.91}
-\]
+**0.91**
