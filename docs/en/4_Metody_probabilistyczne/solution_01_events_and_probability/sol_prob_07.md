@@ -1,83 +1,91 @@
-### Task 7 Answer
+# Task 7 – Probability of Receiving a Signal
 
 **Problem:**
 
-- Two types of signals are transmitted: \(111\) and \(000\)  
-- A priori probabilities: \(P(111) = 0.65, \ P(000) = 0.35\)  
-- Random interference:  
-  - Symbol 1 can be received as 0 with probability 0.2  
-  - Symbol 0 can be received as 1 with probability 0.2  
-- Symbols are independently affected.
+On a communication line, two types of signals are transmitted in the form of code combinations:
 
-Calculate the probability of receiving the signals: \(111, 000, 010\).
+- 111 with a priori probability 0.65  
+- 000 with a priori probability 0.35  
 
----
+The signals are subject to random interference:
 
-**Solution:**
+- Symbol 1 is received as 0 with probability 0.2  
+- Symbol 0 is received as 1 with probability 0.2  
 
-Let’s denote the received signal as \(R\).
+Symbols are distorted independently of each other.
 
-1. **Probability of receiving \(111\)**  
+Calculate the probability of receiving the signal:
 
-- If transmitted \(111\): each 1 is correctly received with probability \(0.8\)  
-\[
-P(R=111 | 111 \text{ sent}) = 0.8^3 = 0.512
-\]  
-
-- If transmitted \(000\): each 0 is received as 1 with probability 0.2  
-\[
-P(R=111 | 000 \text{ sent}) = 0.2^3 = 0.008
-\]  
-
-Use **total probability formula**:  
-\[
-P(R=111) = P(R=111|111)P(111) + P(R=111|000)P(000)
-\]  
-\[
-P(R=111) = 0.512 \cdot 0.65 + 0.008 \cdot 0.35 = 0.3328 + 0.0028 \approx 0.3356
-\]
+1. 111  
+2. 000  
+3. 010  
 
 ---
 
-2. **Probability of receiving \(000\)**  
+## Solution
 
-- If transmitted \(000\): each 0 correctly received with probability \(0.8\)  
-\[
-P(R=000 | 000) = 0.8^3 = 0.512
-\]  
+Given:
+- P(111 sent) = 0.65  
+- P(000 sent) = 0.35  
+- P(correct transmission of a symbol) = 0.8  
+- P(error in a symbol) = 0.2  
 
-- If transmitted \(111\): each 1 received as 0 with probability 0.2  
-\[
-P(R=000 | 111) = 0.2^3 = 0.008
-\]  
-
-Total probability:  
-\[
-P(R=000) = 0.512 \cdot 0.35 + 0.008 \cdot 0.65 = 0.1792 + 0.0052 \approx 0.1844
-\]
+Since symbols are independent, we multiply probabilities for each bit.
 
 ---
 
-3. **Probability of receiving \(010\)**  
+### 1) Probability of receiving 111
 
-- If transmitted \(111\): probability to get 010  
-\[
-P(R=010|111) = 0.2 \cdot 0.8 \cdot 0.2 = 0.032
-\]  
-- If transmitted \(000\): probability to get 010  
-\[
-P(R=010|000) = 0.8 \cdot 0.2 \cdot 0.8 = 0.128
-\]  
+If 111 was sent:
+P(111 | 111 sent) = 0.8 × 0.8 × 0.8 = 0.8³ = 0.512  
 
-Total probability:  
-\[
-P(R=010) = 0.032 \cdot 0.65 + 0.128 \cdot 0.35 = 0.0208 + 0.0448 \approx 0.0656
-\]
+If 000 was sent:
+P(111 | 000 sent) = 0.2 × 0.2 × 0.2 = 0.2³ = 0.008  
+
+Using total probability:
+
+P(111 received) = 0.65 × 0.512 + 0.35 × 0.008  
+P(111 received) = 0.3328 + 0.0028  
+P(111 received) = 0.3356  
 
 ---
 
-**Answer:**
+### 2) Probability of receiving 000
 
-\[
-P(R=111) \approx 0.336, \quad P(R=000) \approx 0.184, \quad P(R=010) \approx 0.066
-\]
+If 000 was sent:
+P(000 | 000 sent) = 0.8³ = 0.512  
+
+If 111 was sent:
+P(000 | 111 sent) = 0.2³ = 0.008  
+
+P(000 received) = 0.35 × 0.512 + 0.65 × 0.008  
+P(000 received) = 0.1792 + 0.0052  
+P(000 received) = 0.1844  
+
+---
+
+### 3) Probability of receiving 010
+
+Case 1: 111 was sent  
+To receive 010 from 111:
+1→0 (0.2), 1→1 (0.8), 1→0 (0.2)
+
+P(010 | 111 sent) = 0.2 × 0.8 × 0.2 = 0.032  
+
+Case 2: 000 was sent  
+To receive 010 from 000:
+0→0 (0.8), 0→1 (0.2), 0→0 (0.8)
+
+P(010 | 000 sent) = 0.8 × 0.2 × 0.8 = 0.128  
+
+P(010 received) = 0.65 × 0.032 + 0.35 × 0.128  
+P(010 received) = 0.0208 + 0.0448  
+P(010 received) = 0.0656  
+
+---
+
+## Final Answers
+
+- P(111) = **0.3356**  
+- P(000) = **0.1844**  
+- P(010) = **0.0656**
