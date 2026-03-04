@@ -1,42 +1,39 @@
-### Task 4 Answer
+# Task 4 – Parallel System Reliability
 
 **Problem:**
 
-A fragment of an electrical network consists of two elements connected in **parallel**: \(a_1\) and \(a_2\).  
-Let \(A_i\), \(i=1,2\), denote the event that element \(a_i\) remains functional for at least time \(t\).  
+A fragment of an electrical network consists of two elements connected in parallel: a₁ and a₂.
 
-Given:  
-\[
-P(A_1) = P(A_2) = p, \quad P(A_1 \cap A_2) = p^2
-\]
+Let Aᵢ (i = 1, 2) denote the event that element aᵢ remains functional for at least time t.
 
-Find the probability of continuous current flow through this system for at least time \(t\).
+Given:
 
----
+P(A₁) = P(A₂) = p  
+P(A₁ ∩ A₂) = p²  
 
-**Solution:**
-
-1. For a **parallel system**, current flows if **at least one element is functional**:  
-   \[
-   A = A_1 \cup A_2
-   \]
-
-2. Use the formula for the union of two events:  
-   \[
-   P(A_1 \cup A_2) = P(A_1) + P(A_2) - P(A_1 \cap A_2)
-   \]
-
-3. Plug in the given probabilities:  
-   \[
-   P(A_1 \cup A_2) = p + p - p^2 = 2p - p^2
-   \]
+Find the probability of continuous current flow through the system for at least time t.
 
 ---
 
-**Answer:**  
-\[
-\boxed{2p - p^2}
-\]
+## Solution
 
-**Explanation:**  
-In a parallel connection, the current flows uninterrupted if **at least one element works**, giving the probability \(2p - p^2\).
+In a parallel system, current flows if **at least one element** remains functional.
+
+Therefore, the required probability is:
+
+P(A₁ ∪ A₂)
+
+Using the formula for the union of two events:
+
+P(A₁ ∪ A₂) = P(A₁) + P(A₂) − P(A₁ ∩ A₂)
+
+Substitute the given values:
+
+P(A₁ ∪ A₂) = p + p − p²  
+P(A₁ ∪ A₂) = 2p − p²  
+
+---
+
+## Final Answer
+
+P(system works for at least time t) = **2p − p²**
