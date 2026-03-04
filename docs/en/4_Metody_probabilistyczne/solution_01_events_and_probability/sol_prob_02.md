@@ -1,45 +1,44 @@
-### Task 2 Answer
+# Task 2 – Probability Mass Function and CDF
 
-**Problem Recap:**
+**Problem:**
 
-- Element \(a_1\) is in **series** with a block of \(a_2\) and \(a_3\) connected in **parallel**.  
-- \(A_i\), \(i=1,2,3\), denotes the event that element \(a_i\) is functional at time \(t\).  
-- We want the event \(A\): *"current flows through the circuit without interruption"*.
+The ratio of very good, good, satisfactory, and failing grades is:
 
----
+1 : 3 : 4 : 2
 
-### Step 1: Recall rules for series and parallel connections
+Let the random variable X represent the numerical grade:
 
-1. **Series connection:** Current flows if **all elements in series are functional**.  
-   - Functional event: \(A_x \cap A_y\)  
-
-2. **Parallel connection:** Current flows if **at least one element is functional**.  
-   - Functional event: \(A_x \cup A_y\)  
+- 5 = Very Good  
+- 4 = Good  
+- 3 = Satisfactory  
+- 2 = Failing  
 
 ---
 
-### Step 2: Apply the rules to the circuit
+## Step 1: Probability Mass Function (PMF)
 
-1. **Parallel block** (\(a_2\) and \(a_3\)):  
-   Current flows through the block if **at least one element is functional**:  
-   \[
-   A_{\text{parallel}} = A_2 \cup A_3
-   \]
+Total ratio = 1 + 3 + 4 + 2 = 10
 
-2. **Series with \(a_1\)**:  
-   Current flows through the whole circuit if **both the series element and the parallel block are functional**:  
-   \[
-   A = A_1 \cap (A_2 \cup A_3)
-   \]
+P(X = 5) = 1/10 = 0.10  
+P(X = 4) = 3/10 = 0.30  
+P(X = 3) = 4/10 = 0.40  
+P(X = 2) = 2/10 = 0.20  
 
 ---
 
-### Step 3: Explanation
+## Step 2: Cumulative Distribution Function (CDF)
 
-- \(A_1\) must be functional (series requirement)  
-- **Either \(A_2\) or \(A_3\) (or both) must be functional** (parallel requirement)  
+F(x) = P(X ≤ x)
 
-So the current will flow uninterrupted if and only if:  
-\[
-\boxed{A = A_1 \cap (A_2 \cup A_3)}
-\]
+F(2) = 0.20  
+F(3) = 0.20 + 0.40 = 0.60  
+F(4) = 0.60 + 0.30 = 0.90  
+F(5) = 1.00  
+
+---
+
+## Step 3: Required Probability
+
+P(X < 3.5) = P(X = 2) + P(X = 3)
+
+P(X < 3.5) = 0.20 + 0.40 = **0.60**
