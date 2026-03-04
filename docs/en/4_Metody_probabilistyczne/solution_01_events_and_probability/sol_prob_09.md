@@ -1,35 +1,47 @@
-### Task 9 Answer
+# Task 9 – Probability of First-Quality Item
 
 **Problem:**
 
-A certain good is produced by 3 plants. Probabilities of producing first-quality goods:
+A good is produced by 3 plants. The probability of producing a first-quality item by each plant is:
 
-\[
-P(F_1) = 0.97, \quad P(F_2) = 0.90, \quad P(F_3) = 0.86
-\]
+- Plant 1: 0.97  
+- Plant 2: 0.90  
+- Plant 3: 0.86  
 
-Find the probability that a randomly selected item — one from each plant — is first-quality.
-
----
-
-**Solution:**
-
-Assume the items are independent. Let \(F_i\) denote that the item from plant \(i\) is first-quality.
-
-The probability that a randomly selected item is first-quality is the **average probability** over the three plants:
-
-\[
-P(F) = \frac{P(F_1) + P(F_2) + P(F_3)}{3} 
-\]
-
-\[
-P(F) = \frac{0.97 + 0.90 + 0.86}{3} = \frac{2.73}{3} = 0.91
-\]
+Find the probability that a randomly selected item (one from each plant) is of first quality.
 
 ---
 
-**Answer:**
+## Solution
+
+Let \(P(A_1), P(A_2), P(A_3)\) be the probabilities of a first-quality item from plants 1, 2, and 3 respectively:
 
 \[
-\boxed{P(\text{random item is first-quality}) = 0.91}
+P(A_1) = 0.97, \quad P(A_2) = 0.90, \quad P(A_3) = 0.86
+\]
+
+Since the item is randomly chosen from one of the three plants (equal probability from each plant):
+
+\[
+P(\text{first-quality}) = \frac{1}{3} P(A_1) + \frac{1}{3} P(A_2) + \frac{1}{3} P(A_3)
+\]
+
+\[
+P(\text{first-quality}) = \frac{1}{3} (0.97 + 0.90 + 0.86)
+\]
+
+\[
+P(\text{first-quality}) = \frac{1}{3} (2.73)
+\]
+
+\[
+P(\text{first-quality}) = 0.91
+\]
+
+---
+
+**Answer:**  
+
+\[
+\boxed{0.91}
 \]
