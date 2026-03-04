@@ -22,18 +22,25 @@ Using operations on events \(A_i\) and the symbols for union (∪) and intersect
 
 ### Step 2: Apply rules to the circuit
 
-1. Parallel block (elements \(a_2\) and \(a_3\)) → current flows if:  
+1. **Parallel block** (elements \(a_2\) and \(a_3\)) → current flows if:  
 \[
 A_2 \cup A_3
 \]
 
-2. Series with \(a_1\) → current flows if:  
+2. **Series with \(a_1\)** → current flows if:  
 \[
-A = 
-\] <!-- Cevabı buraya kendin yazabilirsin -->
+A = A_1 \cap (A_2 \cup A_3)
+\]
 
 ---
 
-### Answer
+### ✅ Answer
 
-<!-- Fill in the answer here -->
+\[
+\boxed{A = A_1 \cap (A_2 \cup A_3)}
+\]
+
+*Explanation:*  
+For the current to flow without interruption:  
+- \(a_1\) must be functional **and**  
+- **either \(a_2\) or \(a_3\) (or both) must be functional**.  
