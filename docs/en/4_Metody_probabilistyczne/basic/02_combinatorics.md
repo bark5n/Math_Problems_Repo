@@ -346,7 +346,7 @@ For each situation determine which combinatorial model is most appropriate:
 
 ## Task 4 — Circular Permutations
 
-1. In how many ways can 7 people sit around a round table?  
+1. In how many ways can 8 people sit around a round table?  
 2. In how many ways can they sit if two particular people must sit next to each other?  
 3. In how many ways can they sit if those two people must sit opposite each other?
 
