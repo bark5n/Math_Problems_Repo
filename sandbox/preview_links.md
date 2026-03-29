@@ -77,9 +77,16 @@ Jak to dziala:
 
 ## Dodatkowe laboratoria
 
+- Rozklad dwumianowy - histogram live i mechanika losowania:
+  GitHub:
+  <https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/sandbox/html/binomial_live_lab.html>
+  Podglad HTML:
+  <https://html-preview.github.io/?url=https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/sandbox/html/binomial_live_lab.html>
+  Co pokazuje:
+  pojedyncze doswiadczenia Bernoulliego, budowanie histogramu w czasie rzeczywistym, porownanie z teoria i wykres bledu globalnego.
+
 - Igla Buffona - symulacja Monte Carlo:
   GitHub:
   <https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/sandbox/html/buffon_needle_lab.html>
   Podglad HTML:
   <https://html-preview.github.io/?url=https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/sandbox/html/buffon_needle_lab.html>
-
